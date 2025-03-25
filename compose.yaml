@@ -36,6 +36,14 @@
     networks:
       - app_network
 
+  frontend:
+    image: frontend:0.0.1
+    build: services/frontend
+    ports:
+      - "8000:3000"
+    networks:
+      - app_network
+
 networks:
   app_network:
     driver: bridge
