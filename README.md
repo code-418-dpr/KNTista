@@ -5,8 +5,7 @@
 [![downloads](https://img.shields.io/github/downloads/code-418-dpr/KNTista/total)](https://github.com/code-418-dpr/KNTista/releases)
 [![code size](https://img.shields.io/github/languages/code-size/code-418-dpr/KNTista.svg)](https://github.com/code-418-dpr/KNTista)
 
-Проект для автоматизации
-нужд [профбюро ИКНТ](https://vk.com/iknt_donntu?search_track_code=0420b647WLLSflc78zrg5LRY4zMF19lgtvcEt0MKSGkWyLJHZPUORjS99-wIghu51TqCTkmNgTLes1XiAW9NVxDMpzgS&from=search)
+Проект для автоматизации нужд [профбюро ИКНТ](https://vk.com/iknt_donntu)
 
 ## Особенности реализации
 
@@ -36,15 +35,15 @@
 1. Клонируйте репозитории сервисов, входящих в состав проекта по SSH (рекомендуется):
 
 ```shell
-git clone git@github.com:code-418-dpr/KNTista-frontend.git services/frontend
-git clone git@github.com:code-418-dpr/KNTista-api.git services/api
+git clone git@github.com:code-418-dpr/KNTista-frontend.git services/KNTista-frontend
+git clone git@github.com:code-418-dpr/KNTista-api.git services/KNTista-api
 ```
 
 или по HTTPS:
 
 ```shell
-git clone https://github.com/code-418-dpr/KNTista-frontend.git services/frontend
-git clone https://github.com/code-418-dpr/KNTista-backend.git services/api
+git clone https://github.com/code-418-dpr/KNTista-frontend.git services/KNTista-frontend
+git clone https://github.com/code-418-dpr/KNTista-backend.git services/KNTista-api
 ```
 
 После этого вы можете вносить изменения в каждый из сервисов по-отдельности (в соответствии с инструкциями, описанными в
@@ -55,8 +54,8 @@ git clone https://github.com/code-418-dpr/KNTista-backend.git services/api
 0. Установите проект по инструкции выше.
 1. Создайте файл `.env` на основе [.env.template](.env.template) и настройте все описанные там параметры.
 2. Установите Docker.
-3. Ознакомьтесь с инструкциями к сервисам проекта. Некоторые из них могут требовать дополнительной конфигурации (
-   например, применение миграций к БД)
+3. Ознакомьтесь с инструкциями к сервисам проекта. Некоторые из них могут требовать дополнительной конфигурации
+   (например, применение миграций к БД)
 4. Теперь запускать проект можно командой:
 
 ```shell
